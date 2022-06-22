@@ -1,0 +1,112 @@
+#state{
+  padding-left: 40%;
+  font-family:  'Script MT', cursive;
+  font-size: 80px;
+	margin-top:10%;
+
+}
+body{
+  overflow-y: hidden;
+
+}
+#showtimes{
+  font-family:  'Script MT', cursive;
+  padding-left: 37%;
+  font-size: 60px;
+  margin-top:5%;
+  
+}
+#navigation{
+  margin-left: -20%;
+  margin-top: -15%;
+  position:fixed;
+  width: 25%;
+  border: 30px solid #216e73;
+  height: 100%;
+  background-color: #58cec3;
+  transform: translateX(-40%);
+  transition: all 0.5s;
+  padding-top: 10%;
+}
+/**/
+#navigation.active{
+  position:fixed;
+  padding-top: 10%;
+  border: 30px solid #216e73;
+  height: 100%;
+  background-color: #58cec3;
+  transform: translateX(58%);
+  transition: all 0.5s;
+  text-align: center;
+}
+#nabtn{
+  background-color: white;
+  margin-left: 0%;
+  margin-top: -9%;
+  position:fixed;
+  width: 4%;
+  border-radius: 10px;
+  aspect-ratio: 4/3;
+  transform: translateX(0);
+  transition: all 0.5s;
+  background-size: cover;
+}
+#nabtn.active{
+  background-color: white;  
+  transform: translateX(240px);
+  transition: all 0.5s;
+  background-size: cover;
+}     
+.box{
+  border-radius: 5px;
+  background:radial-gradient(#5e686d 60% , #404540);
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  font-family: "serif";
+  text-align: center;
+  padding: 5%;
+	
+}
+input{
+  width: 80%;
+}
+#con{
+  text-align: center;
+  color: white;
+}
+#sentsettime{
+	margin: auto;
+	margin-top:5%;
+  margin-bottom: 2%;
+  display:block;
+	
+}
+#start,#stop{
+ margin: 3%;
+  margin-top: 2%;
+  display:inline;
+}
+#sentsettime , #start,#stop{
+	
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	background-color:#768d87;
+	border-radius:5px;
+	border:1px solid #566963;
+	/*display:inline-block;*/
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+#sentsettime:hover , #start:hover,#stop:hover {
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	background-color:#6c7c7c;
+}
+

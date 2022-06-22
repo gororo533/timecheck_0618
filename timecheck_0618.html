@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="timecheck_0618.css">
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+</head>
+
+<body>
+  <audio id="audiotag1" src="Alarm-Clock Sound!!!.mp3" preload="auto"></audio>
+  <div id="navigation">
+    <div class="box">
+      <div id="con">
+        <input id="settimemo" value="1">
+        <span>分</span>
+        <input id="settimese" value="0">
+        <span>秒</span>
+        <button id="sentsettime">sent!</button>
+        <button id="start">start</button>
+        <button id="stop">stop</button>
+      </div>
+    </div>
+  </div>
+  <button id="nabtn"><img src="three lines 1_ccexpress.png" style="width: 100%; aspect-ratio: 1;"></button>
+  <!--<a href="javascript:play_single_sound();">Play 5-sec sound on single channel</a>-->
+  
+  
+  <section id="state"></section>
+  <section id="showtimes">
+    <p>1分0秒</p>
+  </section>
+  <script src="timecheck_0618.js"></script>
+</body>
+
+</html>
