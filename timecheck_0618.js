@@ -6,12 +6,16 @@ let status = 0; // 0 是還沒開始，1是正在跑
 
 document.getElementById("sentsettime").addEventListener("click" , function(){
   intertime = 60000 * Number(document.getElementById("settimemo").value) + 1000 * Number(document.getElementById("settimese").value);
-  alert("update")
-  console.log("sus " , intertime  )
-  stop_setiner()
-
-  document.getElementById("showtimes").innerHTML = `<p>${ Number(document.getElementById("settimemo").value)}分${Number(document.getElementById("settimese").value)}秒<p>`;
-  document.getElementById("start").innerHTML = "start";
+  if(intertime === 0){
+    alert("0 can't be accepted")
+  }
+  else{
+    alert("update")
+    console.log("sus " , intertime  )
+    stop_setiner()
+    document.getElementById("showtimes").innerHTML = `<p>${Number(document.getElementById("settimemo").value)}分${Number(document.getElementById("settimese").value)}秒<p>`;
+    document.getElementById("start").innerHTML = "start";
+  }
 })
 
 document.getElementById("settimemo").addEventListener("keypress" , function(e){
